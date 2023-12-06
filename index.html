@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        option {
+            padding: 10px;
+        }
+
+        .button-box {
+            width: 230px;
+            margin: 35px auto;
+            position: relative;
+            border-radius: 30px;
+            background: #fff;
+        }
+
+        .toggle-btn {
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+            background: transparent;
+            color: rgb(174, 158, 158);
+            font-weight: 600;
+            border: 0;
+            outline: none;
+            position: relative;
+            text-align: center;
+        }
+
+        #btn {
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: #0f3cc9;
+            font-weight: 700;
+            border-radius: 30px;
+            transition: .5s;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fs-6 fw-bolder px-4 py-3 " data-bs-theme="dark"
+        style="background-color:#0f3cc9;">
+        <div class="container-fluid">
+            <div><a class="navbar-brand bg-primary-subtle p-2 rounded-circle " href="#">JIO</a></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 " aria-current="page" href="#">Mobile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">True 5G</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">JioFiber</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link active px-3 text-decoration-underline " aria-current="page"
+                            href="#">AirFiber<span class="badge rounded-pill text-bg-danger position-absolute"
+                                style="bottom:80%;left:30%;">NEW</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Devices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Support</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="px-2"><i class='bx bx-search p-2 rounded-circle bg-white '></i></div>
+                    <div class="px-2"><i class='bx bx-user p-2 rounded-circle bg-white text-primary'></i></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="position-relative "
+        style=" background-image: url('https://inhindiwise.com/wp-content/uploads/2023/09/Jio-AirFiber-Launched-in-India-inhindiwise.jpg'); background-size:auto; background-position: center; background-color: linear-gradient; ">
+        <div class=" position-absolute " style="top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;">
+        </div>
+        <div class="container-fluid ">
+            <div class="jumbotron position-relative z-2 text-white w-50 py-5 px-3">
+                <h1 class="display-4 fw-bolder text-white lh-1 ls-sm" style="font-size: 70px;">Introducing
+                    JioAirFiber</h1>
+                <p class="lead fs-4 fw-bold my-4 ">India's latest home entertainment and Wi-Fi service.
+                </p>
+                <div class="d-flex ">
+                    <a class="btn btn-primary btn-lg rounded-pill fs-6  fw-bold mx-3 " href="#" role="button">Book
+                        Now</a>
+                    <button class="btn btn-outline-light btn-lg rounded-pill fs-6 fw-bold d-flex">
+                        <div class="px-2 ">Watch Features</div>
+                        <div><i class='bx bx-play-circle fs-4 fw-bold '></i></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 rounded-4 py-4" style="background-color:#0c5273;">
+        <div class="d-flex justify-content-center">
+            <div class="d-flex p-1  rounded-5 " style="background-color:rgba(100, 148, 237, 0.703);">
+                <div class="rounded-circle fs-5 fw-bold text-white p-2"
+                    style="background-color:rgba(10, 17, 81, 0.703)">JIO</div>
+                <div class="p-2 fs-5 fw-bold text-white">AIRFIBER</div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <div class="fs-1 fw-bolder text-white w-50 text-center lh-1">JioAirFiber is now available in 494 towns</div>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <div class="text-white">
+                <h5>Check the availability in your location.</h5>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="rounded-5 px-3 fw-bold d-flex justify-content-between"
+                    style="width:370px;padding : 10px 0;">
+                    <div>Select your state</div>
+                    <div><i class='bx bx-caret-down-circle fw-bolder fs-5 '></i></div>
+                </button>
+                <div id="myDropdown" style="display: none;">
+                    <div class="dropdown-content overflow-auto rounded-5 p-2 bg-white"
+                        style="width:370px;height:250px;">
+                        <input type="text" placeholder="Search State" id="myInput" onkeyup="filterFunction()"
+                            class="w-100 rounded-5" style="border:black solid 1px;padding:10px 10px;">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <button class="btn btn-outline-light btn-lg rounded-pill fs-6 fw-bold">Get JioAirFiber</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img style="width:100%" src="https://jep-asset.akamaized.net/cms/assets/airfiber/ribbon-arifiber.png">
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center">
+            <h1 class="" style="font-size: 70px; font-weight: 900;">JioAirFiber services</h1>
+        </div>
+        <div class="text-center">
+            <p class=" fs-5">The best-in-class value proposition.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-between align-items-center my-5 px-5">
+        <div class="w-50">
+            <h1 class="fs-2 " style="font-weight: 900;">Digital Entertainment</h1>
+            <ul>
+                <li>Leading 550+ digital TV channels</li>
+                <li>Catch-up TV to watch missed episodes later</li>
+                <li>Subscriptions to the most popular 15+ OTT apps</li>
+            </ul>
+        </div>
+        <div class="w-50">
+            <img class="w-100 h-75"
+                src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-11.png">
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center my-5 px-5">
+        <div class="w-50">
+            <img class="w-100 h-auto rounded-4 h-75"
+                src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-1.webp">
+        </div>
+        <div class="w-50 d-flex justify-content-center  ">
+            <div>
+                <h1 class="fs-2 " style="font-weight: 900;">Broadband Connection</h1>
+                <ul>
+                    <li>Wi-Fi connectivity and high-speed internet</li>
+                    <li>Catch-up TV to watch missed episodes later</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-between align-items-center my-5 px-5">
+        <div class="w-50">
+            <h1 class="fs-2 " style="font-weight: 900;">Smart Home Services</h1>
+            <ul>
+                <li>Powers your surveillance, healthcare, smart home IoT, gaming, and home networking systems</li>
+                <li>Enables Cloud PC for education and work-from-home</li>
+            </ul>
+        </div>
+        <div class="w-50">
+            <img class="w-100 h-75 rounded-5"
+                src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-2.webp">
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center my-5 px-5">
+        <div class="w-50">
+            <img class="w-100 h-auto rounded-4 h-75"
+                src="https://jep-asset.akamaized.net/cms/assets/airfiber/jioairfiber-features-3.webp">
+        </div>
+        <div class="w-50 d-flex justify-content-center  ">
+            <div>
+                <h1 class="fs-2" style="font-weight: 900;">Home devices at no extra cost</h1>
+                <ul>
+                    <li>Latest Wi-Fi router for coverage everywhere in your home</li>
+                    <li>4K smart set-top box</li>
+                    <li>Voice-active remote</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-3 " style="background-color: #e7ebf8;">
+        <div>
+            <h1 class="text-center" style="font-size: 60px; font-weight:900">JioAirFiber plans</h1>
+            <p class="text-center fs-5">Find a perfect plan to go with your digital aspirations.</p>
+            <div class="text-center">
+                <div class="button-box d-flex">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="leftClick()">AirFiber</button>
+                    <button type="button" class="toggle-btn" onclick="rightClick()">AirFiber Max</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid  d-flex gap-4">
+            <div class="container bg-white shadow rounded-5 py-2">
+                <span class="fs-1 " style="font-weight: 900;">₹599</span>
+                <span>+GST</span>
+                <p>6/12 months plans available for new customers</p>
+                <hr>
+                <div class="d-flex justify-content-between ">
+                    <div>
+                        <p>Validity<br><span class="fw-bolder ">Bill Cycle</span></p>
+                    </div>
+                    <div>
+                        <p>Data<br><span class="fw-bolder ">1000 GB @ 300 Mbps</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-baseline  gap-1">
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0127.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0071.svg"></div>
+                    <div>
+                        <p class="">+10 more</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="btn rounded-5 fw-bolder text-white p-2"
+                        style="background-color: #0f3cc9;width: 90%">View Details</button>
+                </div>
+            </div>
+            <div class="container bg-white shadow rounded-5 py-2">
+                <span class="fs-1 " style="font-weight: 900;">₹899</span>
+                <span>+GST</span>
+                <p>6/12 months plans available for new customers</p>
+                <hr>
+                <div class="d-flex justify-content-between ">
+                    <div>
+                        <p>Validity<br><span class="fw-bolder ">Bill Cycle</span></p>
+                    </div>
+                    <div>
+                        <p>Data<br><span class="fw-bolder ">1000 GB @ 300 Mbps</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-baseline  gap-1">
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0127.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0071.svg"></div>
+                    <div>
+                        <p class="">+10 more</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="btn rounded-5 fw-bolder text-white p-2"
+                        style="background-color: #0f3cc9;width: 90%">View Details</button>
+                </div>
+            </div>
+            <div class="container bg-white shadow rounded-5 py-2">
+                <span class="fs-1 " style="font-weight: 900;">₹1499</span>
+                <span>+GST</span>
+                <p>6/12 months plans available for new customers</p>
+                <hr>
+                <div class="d-flex justify-content-between ">
+                    <div>
+                        <p>Validity<br><span class="fw-bolder ">Bill Cycle</span></p>
+                    </div>
+                    <div>
+                        <p>Data<br><span class="fw-bolder ">1000 GB @ 300 Mbps</span></p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-baseline  gap-1">
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0127.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0073.svg"></div>
+                    <div class="rounded-circle object-fit-cover"><img class="" style="width:40px;"
+                            src="https://jep-asset.akamaized.net/jiocom/static/images/Z0071.svg"></div>
+                    <div>
+                        <p class="">+10 more</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="btn rounded-5 fw-bolder text-white p-2"
+                        style="background-color: #0f3cc9;width: 90%">View Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 ">
+            <button class="btn rounded-5 fw-bolder text-white p-2" style="background-color: #0f3cc9;">Get
+                JioAirFiber</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid bg-white">
+        <h1 class="text-center my-5" style="font-size: 60px; font-weight:900">JioAirFiber FAQ</h1>
+        <div class="container">
+            <div class="card p-2">
+                <div class="card-header bg-white border-0 ">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapseOne">
+                        What is JioAirFiber?<span style="float: right;"><i class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p>JioAirFiber is a service that will redefine how we experience and manage our homes and
+                                businesses. It
+                                provides an opportunity for TV or broadband users to upgrade to a world-class home
+                                entertainment,
+                                broadband, and digital experience, delivered through one integrated service. JioAirFiber
+                                provides
+                                the best-in-class value proposition and plans as JioFiber.</p>
+                            <p>Digital Entertainment:</p>
+                            <ol>
+                                <li><b>Top 550+ digital TV channels.</b> All your favourite TV channels are available in
+                                    high-definition.</li>
+                                <li><b>Catch-up TV:</b> You can now go back as long as you want and pull out your
+                                    favourite shows to
+                                    watch them later.</li>
+                                <li><b>The most popular 15+ OTT apps:</b> JioAirFiber gives you free access to the
+                                    leading OTT apps.
+                                    You can also utilise this subscription to use the apps across any device of your
+                                    choice, be it
+                                    TV, laptop, mobile or tablet.</li>
+                            </ol>
+                            <br>
+                            <p><b>Broadband:</b> With indoor Wi-Fi service, you enjoy Jio's reliable Wi-Fi connectivity
+                                and
+                                high-speed broadband experience everywhere in your home and business premises.</p>
+                            <br>
+                            <p>Smart Home Service: Enables the following smart systems at your home for an exceptional
+                                smart living
+                                experience.</p>
+                            <ol>
+                                <li>Cloud PC for education and work-from-home</li>
+                                <li>Security and surveillance solutions</li>
+                                <li>Healthcare</li>
+                                <li>Education</li>
+                                <li>Smart Home IoT</li>
+                                <li>Gaming</li>
+                                <li>Home networking</li>
+                            </ol>
+                            <p><b>Home devices at no additional cost</b></p>
+                            <ol>
+                                <li>Latest Wi-Fi router for coverage everywhere in your home</li>
+                                <li>4K smart set-top box</li>
+                                <li>Voice-active remote</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card py-2">
+                <div class="card-header  bg-white border-0">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapse2">
+                        I already have a JioFiber connection. Can I switch to JioAirFiber?<span style="float: right;"><i
+                                class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapse2" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p>JioFiber provides the best-in-class service experience for connectivity and entertainment
+                                services. However, you can still opt for JioAirFiber as an additional high-quality
+                                backup service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card py-2">
+                <div class="card-header  bg-white border-0">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapse3">
+                        How to get a new JioAirFiber connection?<span style="float: right;"><i
+                                class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapse3" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p><b>Step 1: Connect with us</b></p>
+                            <ol>
+                                <li>Give a missed call on 60008-60008 to book via WhatsApp</li>
+                                <li>Go to our website:https://www.jio.com/selfcare/interest/airfiber</li>
+                                <li>Visit your nearest Jio Store</li>
+                            </ol>
+                            <p><b>Step 2:</b> Complete the booking process</p>
+                            <p>Register for JioAirFiber services in a few quick and easy steps online or offline.</p>
+                            <P><b>Step 3: Get Confirmation</b></P>
+                            <p>We will get in touch with you and connect your home on priority as soon as services are
+                                available in your locality.</p>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card py-2">
+                <div class="card-header  bg-white border-0">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapse4">
+                        How do I check if JioAirFiber is available in my city?<span style="float: right;"><i
+                                class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapse4" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p>You can check the availability of JioAirFiber in your city in a few simple steps. Just
+                                click on this link https://www.jio.com/jcms/airfiber/ and check if your city's name is
+                                there.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card py-2">
+                <div class="card-header  bg-white border-0">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapse5">
+                        What is the difference between JioAirFiber and JioFiber?<span style="float: right;"><i
+                                class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapse5" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p>JioAirFiber will provide best-in-class value propositions and plans, just like JioFiber.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card py-2">
+                <div class="card-header  bg-white border-0">
+                    <div class="w-100 text-decoration-none text-black fs-6 fw-semibold  cursor-pointer"
+                        data-bs-toggle="collapse" href="#collapse5">
+                        Is installation required for getting a new JioAirFiber connection? Is installation paid?<span
+                            style="float: right;"><i class="bx bx-plus"></i></span>
+                    </div>
+                </div>
+                <div id="collapse5" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="ans-content ">
+                            <p>To ensure an ultra-fast connection, an outdoor unit will be installed on your
+                                terrace/rooftop or outside your home. This installation service is chargeable at Rs.
+                                1,000 but will be waived off in case you opt for an annual plan. You can also take the
+                                benefit of credit/debit card-based EMI to pay monthly and still get the benefits of an
+                                annual plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container my-5 "><button class="btn btn-outline-secondary rounded-5 ">View more</button></div>
+    </div>
+
+
+    <div class="p-5 pb-0" style="background-color: #f5f5f5;">
+        <div class="d-flex justify-content-between align-items-start  ">
+            <div>
+                <h6 class="fw-bolder pb-3">Our offerings</h6>
+                <p>Prepaid</p>
+                <p>Postpaid</p>
+                <p>Services</p>
+                <p>Devices</p>
+            </div>
+            <div>
+                <h6 class="fw-bolder pb-3">Support</h6>
+                <p>Track order</p>
+                <p>Relocate JioFiber</p>
+                <p>My account</p>
+                <p>FAQ</p>
+                <p>Locate Us</p>
+                <p>Claim Refund</p>
+                <p>Feedback</p>
+                <p>Contact us</p>
+            </div>
+            <div>
+                <h6 class="fw-bolder pb-3">Our company</h6>
+                <p>Reliance Industries</p>
+                <p>Reliance Foundation</p>
+                <p>JioLife</p>
+                <p>Careers</p>
+                <p>Investor Relations</p>
+            </div>
+            <div>
+                <h6 class="fw-bolder pb-3">Useful links</h6>
+                <p>Get JioFiber</p>
+               <p>JioAutoPlay</p>
+            </div>
+            <div class="w-25">
+                <h3 class="fw-bolder pb-3">Connect with us</h3>
+                <div class="d-flex ">
+                    <i class='bx bxl-meta mx-1  rounded-circle ' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                    <i class='bx bxl-reddit mx-1 rounded-circle' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                    <i class='bx bxl-twitter mx-1 rounded-circle' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                    <i class='bx bxl-facebook-circle mx-1 rounded-circle' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                    <i class='bx bxl-instagram mx-1 rounded-circle' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                    <i class='bx bxl-vk mx-2 rounded-circle' style="font-size:35px;background-color: #0f3cc9;color: #e7ebf8;"></i>
+                </div>
+                <h3 class="fw-bolder my-4">Download MyJio</h3>
+                <div class="d-flex">
+                    <img class="w-50 " src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg">
+                    <img class="w-50" src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="p-0 m-0 ">
+    <div class="d-flex justify-content-between align-items-baseline py-2 mx-4" style="background-color: #f5f5f5;">
+        <div class="d-flex align-items-baseline gap-2 ">
+            <div class="rounded-circle p-1 text-white fw-bolder fs-5 " style="background:#0f3cc9;">JIO</div>
+            <p style="font-size: 12px;">Copyright © 2023 Reliance Jio Infocomm Ltd. All rights reserved.</p>
+        </div>
+        <div>
+            <a style="font-size: 12px;color:#0f3cc9;text-decoration: underline;">Press Release | </a>
+            
+            <a style="font-size: 12px;text-decoration: underline;color:#0f3cc9;">Regulatory | </a>
+            <a style="font-size: 12px;text-decoration: underline;color:#0f3cc9;">Policies | </a>
+            <a style="font-size: 12px;text-decoration: underline;color:#0f3cc9;">Terms & conditions </a>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var div = document.getElementById("myDropdown");
+            console.log(div);
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+        var btn = document.getElementById('btn')
+
+        function leftClick() {
+            btn.style.left = '0'
+        }
+
+        function rightClick() {
+            btn.style.left = '110px'
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("option");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
